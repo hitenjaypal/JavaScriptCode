@@ -1,8 +1,27 @@
 <!DOCTYPE html>
 <head>
     <title></title>
+
+    <style>
+        *{
+            background-color: rgb(32, 82, 220);
+            background-image: url("calculator.jpg");
+        }
+
+        div{
+            text-align: center ;
+        }
+
+        body{
+            text-align: center;
+            position: centre;
+        }
+
+
+    </style>
 </head>
 <body>
+    <div>
     <input type="number" name="first" id="first" step="any"/>   <!--We have create a input checkbox for taking input from user-->
 
     <!--Jo bhi yeh id name or type hota hai voh unique honi chiye isiliye use krte hai html hai  -->
@@ -22,6 +41,8 @@
     <button onclick="cal()">Calculate</button>   <!--apne ne ek function banadia hai jo sb work krega in button so in JS we'll target that Id in our this function (fn ka name kuch bhi de skte hain eg we have given cal()) -->
 
     <input type="text" name=""id="res" readonly="" />
+
+</div>
 
 <!--Now we have to put some logic in web page to actual calculate the numbers-->
 
