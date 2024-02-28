@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+
+    <style>
+        *{
+            background-color: rgb(32, 82, 220);
+            background-image: url("calculator.jpg");
+        }
+
+        div{
+            text-align: center ;
+        }
+
+        body{
+            text-align: center;
+            position: centre;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+    <input type="number" name="first" id="first" step="any"/>   <!--We have create a input checkbox for taking input from user-->
+
+    <!--Jo bhi yeh id name or type hota hai voh unique honi chiye isiliye use krte hai html hai  -->
+    <!--The value of the id attribute must be unique within the HTML document.The id attribute is used to point to a specific style declaration in a style sheet. -->
+    <!--Or yeh JavaScript mai kam aati hai use krne mai eg--target a specific id or class to put logic in it -->
+    <!--It is also used by JavaScript to access and manipulate(Change)element with the specific id.-->
+
+     <select id="ope">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">X</option> <!--Value mai astrik bhejna pdega na ki X-->
+        <option value="/">/</option>
+     </select>
+
+    <input type="number" name="second" id="second" step="any"/>
+    <br>
+    <br>
+    <button onclick="cal()">Calculate</button>   <!--apne ne ek function banadia hai jo sb work krega in button so in JS we'll target that Id in our this function (fn ka name kuch bhi de skte hain eg we have given cal()) -->
+
+    <input type="text" name=""id="res" readonly="" />
+
+</div>
+
+
+
+<!--Now we have to put some logic in web page to actual calculate the numbers-->
+
+</body>
+
+<script type="text/javascript">
+    // Javascript mai comment out different hota hai
+
+    function cal(){
+        var opr1 = document.getElementById('first').value;       // in this .value target krega value ko from Id as their mention
+        var opr2 = document.getElementById('second').value;       // do variables banaye hai and unki id target krdi hai (First&Second) or unke andhr ki values bhi aajygi by .value
+        var ope = document.getElementById('ope').value;
+
+        if(ope == '+') {                                  // ope id mai logic daaldia
+            var res = parseInt(opr1) + parseInt(opr2);   // opr1+opr2 krte toh decimal mai nau aata therefore we use parseInt(opr1) + parseInt(opr2)
+        }
+
+        if(ope == '-') {                                  
+            var res = parseInt(opr1) - parseInt(opr2);  
+        } 
+
+        if(ope == '*') {                                  
+            var res = parseInt(opr1) * parseInt(opr2);   
+        }
+
+        if(ope == '/') {                                  
+            var res = parseInt(opr1) / parseInt(opr2);
+        }
+
+
+        document.getElementById('res').value = res;  // diredtly cal ke box mai aayga 
+
+        // alert(res); // this will give res as we have call in alert
+
+
+        // alert(opr1);                                             // Alert Box Alert krega user ko (in this code Checks ki aara hai ki nai sb)
+        // alert(opr2);
+
+    }
+
+
+    <!--valu-->
+
+    
+
+</script>
+</html>
