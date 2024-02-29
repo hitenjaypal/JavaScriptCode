@@ -1,0 +1,23 @@
+/* h1{                   // simple Html ko Target kiya 
+    color: blueviolet;
+    background-color: beige;
+} */
+
+
+/*# --> Represent ID
+. --> Represent Class */
+
+
+.heading {            /* id(Id(JavaScript Target Type #)banayi hai for Uniqueness and in future for changes ) is used to call the element in css.*/
+    color: rgb(5, 5, 5);
+    background-color: rgb(199, 199, 33);
+}
+
+body {
+    background-color: bisque;
+}
+
+button{
+    background-color: azure;
+    color: black;
+}
