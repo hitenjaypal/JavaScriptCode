@@ -1,4 +1,4 @@
-// The change in the state of an object is known as an Event
+// The change in the state of an object is known as an Event.
 // An event can be triggered by a user action
 // Events are fired to notify code of "interesting changes" that may affect code execution.
 
