@@ -1,0 +1,78 @@
+*{   /*Yeh pure page ko target krega or yeh basic styling dega*/
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #2a1b59;
+    text-align: center; /*text center mai aagya jo bhi body mai likha tha */
+}
+
+
+.container {
+    height: 70vh;      /*web page ka 70% */
+    display: flex; 
+
+    justify-content: center; /* Content ko center mai layga */
+    align-items: center;    /* Ekdum Bichme laadega middle mai page ke */
+} 
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex; /*flex hojyga*/ 
+    flex-wrap: wrap; /*Isse hoga ki aagr upr 60vmin se bhar gyi hai toh baki sb niche aajyga // 3 row bnjygi boxes ki */
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin ; /*Gap diya boxes ke bichme */
+}
+
+
+.box {
+    height: 18vmin;
+    width: 18vmin ;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem  rgba(0,0,0,0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #ffffc7;
+
+}
+
+#reset-btn {
+    padding: 1rem; /* size bdhjygi // content ke aaspas space badhjygi  */
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#new-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #191913;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+}
+
+#msg {
+    color: #ffffc7;
+    font-size: 5vmin;
+  }
+  
+  .msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*Upr Niche Col mai aayga */ 
+    gap: 4rem;
+  }
+  
+  .hide {
+    display: none ;
+  }
